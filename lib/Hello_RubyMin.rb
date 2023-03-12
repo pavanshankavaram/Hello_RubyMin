@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require_relative "Hello_RubyMin/version"
+require "hello_rubymin/version"
 
-module HelloRubyMin
-  class Error < StandardError; end
-  # Your code goes here...
+module HelloRubymin
+  def self.greet(name)
+    puts "Hello, #{name}! I'm Ruby!"
+  end
 end
